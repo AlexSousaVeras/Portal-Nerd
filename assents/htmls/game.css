@@ -1,0 +1,125 @@
+
+body {
+    background-color: rgba(255, 255, 255, 0.908);
+    align-items: center;
+    text-align: center;
+    margin: 3%;
+    border-radius: 15px 15px 15px 15px;
+}
+
+
+
+a, p, h1{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+header {
+    background-color: rgb(0, 0, 0);
+    border-radius: 20px;
+}
+
+.butcor {
+    background-color: rgb(255, 255, 255);
+    height: 50px;
+    border-radius: 50px;
+}
+
+.butem {
+    background:rgb(0, 0, 0);
+    color: white;
+    text-align: center;
+    font-family: Arial black, Helvetica, sans-serif;
+    width: 400px;
+    height: 40px;
+    border-radius: 15px 15px 15px 15px;
+    cursor: pointer;
+}
+
+button:hover {
+    background:rgb(0, 0, 0);
+    color:rgb(255, 255, 255);
+}
+
+.nav-a {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 6rem;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+}
+
+.nav-list ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.nav-item {
+    margin: 0 15px;
+}
+
+.menu-icon-mobol {
+    display: none;
+}
+
+.mobol-menu {
+    display: none;
+}
+
+@media screen and (max-width: 730px) {
+    .nav-a {
+        padding: 1.5rem 4rem;
+    }
+
+    .nav-item {
+        display: none;
+    }
+
+    
+    .menu-icon-mobol {
+        display: block;
+    }
+
+    .menu-icon-mobol button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+
+    .mobol-menu ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+
+    .mobol-menu .nav-item {
+        display: block;
+        padding-top: 1.2rem;
+    }
+
+
+
+    .mobol-menu button {
+        width: 100%;
+    }
+
+    .open {
+        display: block;
+    }
+}
+
+.menu-icon-mobol {
+    background-color: rgb(0, 0, 0);
+    border-radius: 5px;
+    height: 10%;
+}
